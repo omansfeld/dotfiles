@@ -1,0 +1,12 @@
+[shell]
+program = "ubuntu"
+
+[keyboard]
+bindings = [
+	{ key = "Space", mods = "Control", chars = "\u0000" }
+]
+
+[window]
+decorations = "None"
+startup_mode = "Windowed"
+padding = { x = 10, y = 10 }
