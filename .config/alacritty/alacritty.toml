@@ -8,5 +8,5 @@ bindings = [
 
 [window]
 decorations = "None"
-startup_mode = "Windowed"
+startup_mode = "Fullscreen"
 padding = { x = 10, y = 10 }
