@@ -10,3 +10,18 @@ bindings = [
 decorations = "None"
 startup_mode = "Fullscreen"
 padding = { x = 10, y = 10 }
+
+#[font]
+#normal = { family = "UbuntuMono Nerd Font Mono", style = "Regular" }
+#bold = { style = "Bold" }
+#italic = { style = "Italic" }
+#bold_italic = { style = "Bold Italic" }
+#size = 12
+
+[font.normal]
+family = "UbuntuMono Nerd Font"
+
+[font]
+size = 12
+
+
