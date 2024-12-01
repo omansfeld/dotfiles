@@ -104,6 +104,7 @@ export LANG=en_US.UTF-8
 # - $ZSH_CUSTOM/aliases.zsh
 # - $ZSH_CUSTOM/macos.zsh
 # For a full list of active aliases, run `alias`.
+alias andorra="ssh mansfeo97@andorra.imp.fu-berlin.de -i ~/.ssh/id_ed25519"
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
