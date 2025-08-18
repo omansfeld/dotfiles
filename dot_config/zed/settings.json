@@ -1,0 +1,109 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  // ----- GENERAL -----
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+    "**/obj-*"
+  ],
+  "minimap": { "show": "always" },
+  // ----- REMOTE DEV -----
+  "ssh_connections": [
+    {
+      "host": "andorra.imp.fu-berlin.de",
+      "username": "mansfeo97",
+      "args": ["-i", "/Users/omansfeld/.ssh/id_ed25519"],
+      "projects": [
+        {
+          "paths": ["/home/mi/mansfeo97"]
+        },
+        {
+          "paths": ["/home/mi/mansfeo97/infosec"]
+        },
+        {
+          "paths": ["~/bks-exercises"]
+        },
+        {
+          "paths": ["~/npvp-exercises"]
+        }
+      ]
+    }
+  ],
+  // ----- AI STUFF -----
+  // "features": {
+  //   "edit_prediction_provider": "supermaven"
+  // },
+  "edit_predictions": {
+    "mode": "subtle",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null
+    },
+    "enabled_in_text_threads": false
+  },
+  "show_edit_predictions": true,
+  "inlay_hints": {
+    "enabled": true
+  },
+  "agent": {
+    "default_profile": "ask",
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-3.7-sonnet"
+    },
+    "version": "2"
+  },
+
+  // ----- KEYBINDINGS -----
+  "base_keymap": "VSCode",
+  "vim_mode": true,
+
+  // ----- LOOKS -----
+  "ui_font_size": 14,
+  "buffer_font_size": 14,
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Frappé",
+    "dark": "Catppuccin Frappé"
+  },
+  "centered_layout": {
+    "left_padding": 2,
+    "right_padding": 2
+  },
+  "scrollbar": {
+    "show": "always"
+  },
+  "soft_wrap": "editor_width",
+
+  // ----- LANGUAGES -----
+  "format_on_save": "on",
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "check": {
+          "command": "clippy" // rust-analyzer.check.command (default: "check")
+        },
+        "rustfmt": {
+          "extraArgs": ["+nightly"]
+        }
+      }
+    }
+  },
+  "file_types": {
+    "javascript": ["sjs", "jsm"],
+    "WebIDL": ["idl"]
+  }
+}
