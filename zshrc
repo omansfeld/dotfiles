@@ -105,7 +105,11 @@ export LANG=en_US.UTF-8
 # - $ZSH_CUSTOM/macos.zsh
 # For a full list of active aliases, run `alias`.
 alias andorra="ssh mansfeo97@andorra.imp.fu-berlin.de -i ~/.ssh/id_ed25519"
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias cc="cargo clippy"
+alias cb="cargo build"
+alias cr="cargo run"
+alias ct="cargo test"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
