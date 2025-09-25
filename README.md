@@ -1,3 +1,5 @@
+THE BELOW IS WILDlY OUTDATED
+
 bootstrap instruction:
 
 needs to have `git`, `curl` and `zsh` installed
